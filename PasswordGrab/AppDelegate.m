@@ -9,15 +9,23 @@
 #import "AppDelegate.h"
 
 @interface AppDelegate ()
-
+@property (nonatomic, strong) NSTimer* timer;
 @end
 
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+//    self.timer = [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(timerFired:) userInfo:nil repeats:YES];
+    
     return YES;
+}
+
+-(void)timerFired:(NSTimer*)theTimer
+{
+    // okay, in here we grab the image
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
